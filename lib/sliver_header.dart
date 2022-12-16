@@ -4,7 +4,7 @@ class SliverHeader extends StatelessWidget {
   final Color backgroundColor;
   final String _title;
 
-  SliverHeader(this.backgroundColor, this._title);
+  const SliverHeader(this.backgroundColor, this._title, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class Delegate extends SliverPersistentHeaderDelegate {
       child: Center(
         child: Text(
           _title,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 25,
           ),

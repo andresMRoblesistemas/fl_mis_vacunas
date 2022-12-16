@@ -2,6 +2,8 @@ import 'package:fl_mis_vacunas/sliver_header.dart';
 import 'package:flutter/material.dart';
 
 class SliversDemo extends StatefulWidget {
+  const SliversDemo({super.key});
+
   @override
   _SliversDemoState createState() => _SliversDemoState();
 }
@@ -51,10 +53,8 @@ class _SliversDemoState extends State<SliversDemo> {
 
   @override
   Widget build(BuildContext context) {
-    print(_name.toString());
-
     return Scaffold(
-      backgroundColor: Color(0xFFEDF2F8),
+      backgroundColor: const Color(0xFFEDF2F8),
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -72,9 +72,9 @@ class _SliversDemoState extends State<SliversDemo> {
                   fit: BoxFit.cover),
             ),
           ),
-          SliverHeader(Colors.red, "SliverPersistentHeader 1"),
-          SliverHeader(Colors.blue, "SliverPersistentHeader 2"),
-          SliverHeader(Colors.purple, "SliverPersistentHeader 3"),
+          const SliverHeader(Colors.red, "SliverPersistentHeader 1"),
+          const SliverHeader(Colors.blue, "SliverPersistentHeader 2"),
+          const SliverHeader(Colors.purple, "SliverPersistentHeader 3"),
           SliverFixedExtentList(
             itemExtent: 70,
             delegate: SliverChildListDelegate([

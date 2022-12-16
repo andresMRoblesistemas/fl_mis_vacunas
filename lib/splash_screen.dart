@@ -26,7 +26,7 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
 
   void navigationPage() {
     Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => SliversDemo(),));
+        MaterialPageRoute(builder: (context) => const SliversDemo(),));
   }
 
   @override
