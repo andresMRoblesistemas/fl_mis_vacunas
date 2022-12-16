@@ -13,17 +13,17 @@ class _SliversDemoState extends State<SliversDemo> {
 
   Widget _buildName() {
     return TextFormField(
-      decoration: InputDecoration(labelText: 'Name'),
-      validator: (String value) {
-        if (value.isEmpty) {
+      decoration: const InputDecoration(labelText: 'Name'),
+      validator: (value) {
+        if (value!.isEmpty) {
           return 'Name is required';
         }
 
         return null;
       },
-      onSaved: (String value) {
+      onSaved: (value) {
         setState(() {
-          _name.add(value);
+          _name.add(value!);
         });
       },
     );

@@ -16,8 +16,8 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
 
   var _visible = true;
 
-  AnimationController animationController;
-  Animation<double> animation;
+  late AnimationController animationController;
+  late Animation<double> animation;
 
   startTime() async {
     var _duration =  const Duration(seconds: 2);
