@@ -25,6 +25,15 @@ class Delegate extends SliverPersistentHeaderDelegate {
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Container(
+      decoration: BoxDecoration(
+        border: Border.all(
+                      color: Colors.grey,
+                      width: 1.0,
+                      style: BorderStyle.solid),
+                  borderRadius: BorderRadius.only(left
+                    Radius.circular(10),
+                  ),
+      ),
       color: backgroundColor,
       child: Center(
         child: Text(
