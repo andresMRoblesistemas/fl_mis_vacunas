@@ -1,4 +1,4 @@
-import 'package:fl_mis_vacunas/sliver_header.dart';
+import 'package:fl_mis_vacunas/widgets/sliver_header.dart';
 import 'package:flutter/material.dart';
 
 class SliversDemo extends StatefulWidget {
@@ -58,7 +58,7 @@ class _SliversDemoState extends State<SliversDemo> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            title: const Text('Flutter Slivers Demo',style:
+            title: const Text('Demo',style:
             TextStyle(fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: Colors.white),),

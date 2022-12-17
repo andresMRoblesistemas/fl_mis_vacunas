@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fl_mis_vacunas/splash_screen.dart';
+import 'package:fl_mis_vacunas/widgets/splash_screen.dart';
 
 
 void main() => runApp(const MyApp());

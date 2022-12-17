@@ -26,15 +26,14 @@ class Delegate extends SliverPersistentHeaderDelegate {
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Container(
       decoration: BoxDecoration(
+        color: backgroundColor,
         border: Border.all(
-                      color: Colors.grey,
-                      width: 1.0,
-                      style: BorderStyle.solid),
-                  borderRadius: BorderRadius.only(left
-                    Radius.circular(10),
-                  ),
+          color: Colors.grey,
+          width: 1.0,
+          style: BorderStyle.solid),
+        borderRadius: const BorderRadius.only(bottomRight: Radius.circular(30)
+        ),
       ),
-      color: backgroundColor,
       child: Center(
         child: Text(
           _title,

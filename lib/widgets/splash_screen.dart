@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:fl_mis_vacunas/slivers_demo.dart';
+import 'package:fl_mis_vacunas/widgets/slivers_demo.dart';
 import 'package:flutter/material.dart';
 
 
@@ -62,14 +62,14 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin{
             mainAxisSize: MainAxisSize.min,
             children: [
 
-              Padding(padding: const EdgeInsets.only(bottom: 30.0),child: Image.asset('assets/powered_by.png',height: 25.0,fit: BoxFit.scaleDown,))
+              Padding(padding: const EdgeInsets.only(bottom: 30.0),child: Image.asset('assets/logo_1.png',height: 25.0,fit: BoxFit.scaleDown,))
 
             ],),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
                Image.asset(
-                'assets/devs.jpg',
+                'assets/logo_mvacuna.png',
                 width: animation.value * 250,
                 height: animation.value * 250,
               ),
