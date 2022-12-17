@@ -27,10 +27,6 @@ class Delegate extends SliverPersistentHeaderDelegate {
     return Container(
       decoration: BoxDecoration(
         color: backgroundColor,
-        border: Border.all(
-          color: Colors.grey,
-          width: 1.0,
-          style: BorderStyle.solid),
         borderRadius: const BorderRadius.only(bottomRight: Radius.circular(30)
         ),
       ),

@@ -1,3 +1,4 @@
+import 'package:fl_mis_vacunas/widgets/tarjetas_apiladas_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_mis_vacunas/widgets/splash_screen.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData.light(),
         debugShowCheckedModeBanner: false,
-        home: const Splash());
+        //home: const Splash());
+        home: const UltimasDosisWidget());
   }
 }
